@@ -33,9 +33,9 @@ function App() {
   return (
     <main>
       <Header/>
-      <h1>Vitrine de produtos</h1>
+      {/* <h1>Vitrine de produtos</h1> */}
 
-      {loading && <p>Carregando produtos...</p>}
+      {/* {loading && <p>Carregando produtos...</p>}
 
       {error && <p role="alert">{error}</p>}
 
@@ -44,7 +44,7 @@ function App() {
           products={products}
           onSelect={handleSelect}
         />
-      )}
+      )} */}
     </main>
   );
 }
