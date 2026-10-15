@@ -1,0 +1,13 @@
+.partners-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 90px 79px 0;
+}
+
+.partners {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    max-width: none;
+}

@@ -1,0 +1,66 @@
+.partners {
+    position: relative;
+    max-width: 634px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+
+    &__image {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right,
+                rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.7) 45%,
+                transparent 100%);
+        z-index: 1;
+    }
+
+    &__content {
+        margin-top: 130px;
+        margin-left: 44px;
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    &__title,
+    &__subtitle {
+        color: #FFFFFF;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    &__subtitle {
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    &__button {
+        margin-top: 32px;
+        border: none;
+        border-radius: 6px;
+        background-color: #F7CA11;
+        width: 144px;
+        height: 48px;
+        font-size: 16px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}
