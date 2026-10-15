@@ -1,0 +1,61 @@
+.product-card {
+    padding: 32px 13px 0;
+    width: 304px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    &__image {
+        width: 278px;
+        height: 228px;
+    }
+
+    &__name {
+        margin: 0px;
+        font-size: 15px;
+        font-family: 'poppins';
+        font-weight: 300;
+    }
+
+    &__price-promotion {
+        margin-top: 12px;
+        margin-bottom: 0px;
+        color: #808080;
+        font-size: 16px;
+        text-decoration: line-through;
+    }
+
+    &__price {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    &__price-installment {
+        margin-top: 2px;
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+
+    &__freight {
+        margin-top: 7px;
+        margin-bottom: 0px;
+        font-size: 12px;
+        color: #3442B5;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 276px;
+        height: 44px;
+        margin-top: 12px;
+        margin-bottom: 0px;
+        background-color: #3442B5;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+}
