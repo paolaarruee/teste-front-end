@@ -1,0 +1,28 @@
+.related-products {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 90px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &__title {
+        padding-left: 149px;
+        padding-right: 149px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 32px;
+        color: #3442B5;
+        font-size: 30px;
+        font-weight: bolder;
+
+        &::before,
+        &::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #DEDEDE;
+        }
+    }
+}

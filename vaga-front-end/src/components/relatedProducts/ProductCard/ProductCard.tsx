@@ -1,6 +1,6 @@
 
 
-import type { Product } from '../../models/Products';
+import type { Product } from '../../../models/Products';
 import './ProductCard.scss';
 
 interface ProductCardProps {
@@ -19,9 +19,9 @@ export function ProductCard({
 
   return (
     <article className="product-card">
-        <h2 className="product-card__title">
-          {product.productName}
-        </h2>
+      <h2 className="product-card__title">
+        {product.productName}
+      </h2>
     </article>
   );
 }
