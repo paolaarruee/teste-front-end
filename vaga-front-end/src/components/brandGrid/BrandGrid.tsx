@@ -8,7 +8,7 @@ const brandsData = [
     { id: 5, name: 'Econverse', logo: '/logo.svg' },
 ];
 
-export default function BrandGrid() {
+export function BrandGrid() {
     return (
         <section className="brand-section">
             <h2 className="brand-section__title">Navegue por marcas</h2>
