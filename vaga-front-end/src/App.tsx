@@ -4,6 +4,7 @@ import { getProducts } from './services/productService';
 import type { Product } from './models/Products';
 import { Header } from './components/header/Header';
 import { Banner } from './components/banner/banner';
+import { CategoryList } from './components/categoryList/categoryList';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     <main>
       <Header/>
       <Banner/>
+      <CategoryList/>
       {/* <h1>Vitrine de produtos</h1> */}
 
       {/* {loading && <p>Carregando produtos...</p>}
