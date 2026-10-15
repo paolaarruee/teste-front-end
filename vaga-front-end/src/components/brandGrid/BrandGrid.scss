@@ -1,0 +1,61 @@
+$brand-color-primary: #3442B5;
+$brand-bg-circle: #ffffff;
+$brand-max-width: 1250px;
+$brand-shadow: 0px 4px 18px rgba(0, 0, 0, 0.13);
+
+@mixin mobile-tablet {
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+
+.brand-section {
+    width: 100%;
+    max-width: $brand-max-width;
+    margin: 90px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &__title {
+        text-align: center;
+        color: $brand-color-primary;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile-tablet {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    &__circle {
+        width: 211px;
+        height: 211px;
+        border-radius: 50%;
+        background-color: $brand-bg-circle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $brand-shadow;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    &__logo {
+        max-width: 60%;
+        height: auto;
+        object-fit: contain;
+    }
+}
