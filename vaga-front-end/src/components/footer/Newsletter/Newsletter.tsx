@@ -1,3 +1,4 @@
+import './Newsletter.scss';
 export function Newsletter() {
     return (
         <section className="newsletter">
