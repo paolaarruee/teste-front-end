@@ -1,0 +1,64 @@
+.banner {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+        z-index: 1; 
+        pointer-events: none; 
+    }
+
+    &__img {
+        width: 100%;
+        height: 390px;
+        display: block;
+    }
+
+    &__infos {
+        position: absolute;
+        bottom: 120px;
+        left: 81px;
+        z-index: 2;
+    }
+
+    &__title {
+        max-width: 700px;
+        line-height: 1.2;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    &__subtitle {
+        color: #FFFFFF;
+        font-size: 32px;
+        font-weight: light;
+    }
+
+
+    &__highlight {
+        color: #F7CA11;
+        font-weight: bold;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 31px;
+        left: 81px;
+        z-index: 2;
+        width: 206px;
+        height: 50px;
+        background-color: #F7CA11;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+    }
+}

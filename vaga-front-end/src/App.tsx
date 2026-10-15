@@ -1,9 +1,9 @@
 
 import { useEffect, useState } from 'react';
 import { getProducts } from './services/productService';
-import { ProductGrid } from './components/ProductGrid/ProductGrid';
 import type { Product } from './models/Products';
 import { Header } from './components/header/Header';
+import { Banner } from './components/banner/banner';
 
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
   return (
     <main>
       <Header/>
+      <Banner/>
       {/* <h1>Vitrine de produtos</h1> */}
 
       {/* {loading && <p>Carregando produtos...</p>}
