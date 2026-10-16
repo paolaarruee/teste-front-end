@@ -113,24 +113,6 @@ Após iniciar o servidor, o Vite exibirá no terminal o endereço local para ace
 http://localhost:5173
 ```
 
-### 4. Gerar a versão de produção
-
-Para compilar o projeto para produção, execute:
-
-```bash
-npm run build
-```
-
-Os arquivos compilados serão gerados no diretório `dist`.
-
-### 5. Verificar o código com ESLint
-
-Para executar a análise estática do código, utilize:
-
-```bash
-npm run lint
-```
-
 ## Objetivo
 
 Desenvolver uma interface de e-commerce baseada no layout proposto, priorizando a fidelidade visual, a responsividade, a organização do código, a componentização e a interatividade dos elementos.
