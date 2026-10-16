@@ -1,0 +1,121 @@
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+.footer-main {
+    background-color: #F4F4F4;
+    padding: 40px 20px;
+    font-family: 'Poppins';
+    width: 100%;
+    box-sizing: border-box;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__brand-side {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: lighter;
+        margin: 20px 0;
+        line-height: 1.5;
+        max-width: 300px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__social-icon {
+        color: #4A4A4A;
+        font-size: 18px;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    &__vertical-divider {
+        width: 1px;
+        background-color: #282828;
+        align-self: stretch;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__links-side {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        min-width: 300px;
+
+        @include mobile {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    &__links-column {
+        min-width: 150px;
+    }
+
+    &__links-title {
+        color: #222222;
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &__links-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__links-item {
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        color: #222222;
+        font-size: 13px;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #2a184e;
+        }
+    }
+}
